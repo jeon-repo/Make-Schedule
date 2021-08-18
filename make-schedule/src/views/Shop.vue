@@ -1,14 +1,14 @@
 <template>
 <div>
   <!-- <ModalInfo :modal_window="modal_window" /> -->
-  <div class="black-bg" v-if="modal_window">
+  <!-- <div class="black-bg" v-if="modal_window">
     <div class="white-bg content-left">
       <h4>{{ modal_info.title }}</h4>
       <p>상세 내용 : {{ modal_info.content }}</p>
       <p>가격 : {{ modal_info.price }}원</p>
       <button @click="close_modal">닫기</button>
     </div>
-  </div>
+  </div> -->
 
   <!-- <div class="menu"> -->
     <!-- vue의 for문을 사용하면 ()안에 뒤에서부터 데이터가 나옴 -->
@@ -42,22 +42,22 @@ export default {
   name: 'Shop',
   data() {
     return {
-      modal_window: false,
-      modal_info: null,
+      // modal_window: false,
+      // modal_info: null,
       products: oneroom,
     }
   },
 
-  methods: {
-    show_modal(info) {
-      this.modal_window = true
-      this.modal_info = info
-    },
+  // methods: {
+  //   show_modal(info) {
+  //     this.modal_window = true
+  //     this.modal_info = info
+  //   },
 
-    close_modal() {
-      this.modal_window = false
-    },
-  },
+  //   close_modal() {
+  //     this.modal_window = false
+  //   },
+  // },
 }
 </script>
 

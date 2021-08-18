@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <h1>홈페이지</h1>
-  </div>
+  <Content />
 </template>
 
 <script>
+import Content from '@/components/box/Box.vue'
+
 export default {
-  name: 'Home'
-}
+  name: "Home",
+  components: {
+    Content,
+  }
+};
 </script>

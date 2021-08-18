@@ -1,19 +1,17 @@
 <template>
   <div id="root">
-    <div class="menu">
-      <router-link to="/">Home</router-link>
-      <router-link to="/shop">Shop</router-link>
-      <router-link to="/about">About</router-link>
-    </div>
+    <Menu />
     <router-view />
   </div>
 </template>
 
 <script>
+import Menu from '@/components/menu/Menu.vue'
 
 export default {
   name: "App",
   components: {
+    Menu
   },
 };
 </script>
@@ -27,14 +25,7 @@ export default {
   color: #2c3e50;
 }
 
-.menu {
-  background: darkslateblue;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-.menu a {
-  color: white;
-  padding: 10px;
+body {
+  font-size: 10px;
 }
 </style>
