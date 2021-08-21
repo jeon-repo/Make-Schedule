@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="box">
-      <div class="label">진행횟수</div>
+      <div class="label">이번주 진행횟수</div>
       <div class="data">
         <input type="number" name="playcount" id="playcount" />
       </div>
